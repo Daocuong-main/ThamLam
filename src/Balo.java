@@ -57,7 +57,7 @@ public class Balo {
     // Driver code
     public static void main(String[] args)
     {
-        int[] wt = { 10, 40, 20, 30 };
+        int[] wt = {12, 4, 2, 1, 1};
         int[] val = { 60, 40, 100, 120 };
         int capacity = 50;
 
