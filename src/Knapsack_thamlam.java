@@ -40,10 +40,12 @@ public class Knapsack_thamlam {
         double tong_kl = max;
         double tong_gt = 0;
         int i = 0;
+        System.out.println("weight|value|ratio");
         while (tong_kl > 0 && i < V.length) {
             while (items[i].W <= tong_kl) {
                 tong_kl -= items[i].W;
                 tong_gt += items[i].V;
+                System.out.println("(" + items[i].W + "," + items[i].V + "," + items[i].r + ")");
             }
             i++;
         }
