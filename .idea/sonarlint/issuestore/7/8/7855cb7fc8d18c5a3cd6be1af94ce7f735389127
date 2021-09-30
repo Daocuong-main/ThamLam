@@ -1,0 +1,13 @@
+
+R
+java:S1854""<Remove this useless assignment to local variable "capacity".(òÑ„±
+Q	java:S125"<This block of commented-out lines of code should be removed.(úİŒÆ
+[
+java:S1659-"@Declare "val" and all following declarations on a separate line.(è¬ÿûÿÿÿÿ
+;
+java:S21295" Remove this "Double" constructor(äÎ°øÿÿÿÿ
+I
+java:S18745".Remove this use of "Double"; it is deprecated.(äÎ°øÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(Ïªœ¨
+0
+java:S1220""Move this file to a named package.
