@@ -50,8 +50,11 @@ public class LapLichQL {
 
         Arrays.fill(Daxet, false);
         max = 0;
+        long startTime = System.currentTimeMillis();
         lapLich(0);
+        long endTime = System.currentTimeMillis();
         Inlich();
+        System.out.println("Time: " + (endTime - startTime));
     }
 
     public static void lapLich(int count) {

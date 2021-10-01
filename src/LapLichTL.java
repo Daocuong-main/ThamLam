@@ -15,12 +15,12 @@ class Compare {
             @Override
             public int compare(Activity s1, Activity s2) {
                 return s1.finish - s2.finish;
-            } // Sap xep tang dan (Hoat dong xong truoc xep truoc)
+            }// Sap xep tang dan (Hoat dong xong truoc xep truoc)
         });
     }
 }
 
-class Laplich_thamlam {
+class LaplichTL {
     static void InLich(Activity arr[], int n) {
         Compare obj = new Compare();
         obj.compare(arr);
@@ -44,6 +44,9 @@ class Laplich_thamlam {
         arr[3] = new Activity(0, 6);
         arr[4] = new Activity(5, 7);
         arr[5] = new Activity(8, 9);
+        long startTime = System.currentTimeMillis();
         InLich(arr, n);
+        long endTime = System.currentTimeMillis();
+        System.out.println("Time: " + (endTime - startTime));
     }
 }
