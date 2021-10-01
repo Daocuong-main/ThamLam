@@ -21,10 +21,10 @@ class Compare {
 }
 
 class Laplich_thamlam {
-    static void printMaxActivities(Activity arr[], int n) {
+    static void InLich(Activity arr[], int n) {
         Compare obj = new Compare();
         obj.compare(arr, n);
-        System.out.println("Following activities are selected :");
+        System.out.println("Lich duoc chon :");
         int i = 0;
         System.out.print("(" + arr[i].start + ", " + arr[i].finish + ") ");
         for (int j = 1; j < n; j++) {
@@ -44,6 +44,6 @@ class Laplich_thamlam {
         arr[3] = new Activity(0, 6);
         arr[4] = new Activity(5, 7);
         arr[5] = new Activity(8, 9);
-        printMaxActivities(arr, n);
+        InLich(arr, n);
     }
 }
