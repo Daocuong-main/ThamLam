@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 
 public class LapLichQL {
@@ -33,7 +34,19 @@ public class LapLichQL {
     }
 
     public static void main(String[] args) {
-
+//        Random rd = new Random();
+//        int n=55;
+//        int start = 0;
+//        int finish = 0;
+//        activity.add(new Activity(start, finish));
+//        for(int i=0; i<n-1; i++){
+//            start = rd.nextInt(100);
+//            do{
+//                finish = rd.nextInt(100);
+//            } while(finish <= start );
+//
+//            activity.add(new Activity(start, finish));
+//        }
         activity.add(new Activity(1, 3));
         activity.add(new Activity(2, 5));
         activity.add(new Activity(4, 7));
@@ -44,6 +57,7 @@ public class LapLichQL {
         activity.add(new Activity(11, 14));
         activity.add(new Activity(13, 16));
 
+
         Daxet = new boolean[activity.size()];
         actResult = new int[activity.size()];
         hoatdong_hientai = new int[activity.size()];
@@ -53,8 +67,8 @@ public class LapLichQL {
         long startTime = System.currentTimeMillis();
         lapLich(0);
         long endTime = System.currentTimeMillis();
-        Inlich();
         System.out.println("Time: " + (endTime - startTime));
+        Inlich();
     }
 
     public static void lapLich(int count) {

@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Random;
 
 class Activity {
     int start, finish;
@@ -36,14 +37,29 @@ class LaplichTL {
     }
 
     public static void main(String[] args) {
-        int n = 6;
+//        Random rd = new Random();
+        int n = 9;
         Activity arr[] = new Activity[n];
-        arr[0] = new Activity(5, 9);
-        arr[1] = new Activity(1, 2);
-        arr[2] = new Activity(3, 4);
-        arr[3] = new Activity(0, 6);
-        arr[4] = new Activity(5, 7);
-        arr[5] = new Activity(8, 9);
+//        int start = 0;
+//        int finish = 0;
+//        arr[0] = new Activity(0, 0);
+//        for(int i=1; i<n; i++){
+//            start = rd.nextInt(100);
+//            do{
+//                finish = rd.nextInt(100);
+//            } while(finish <= start );
+//
+//            arr[i] = new Activity(start, finish);;
+//        }
+        arr[0] = new Activity(1, 3);
+        arr[1] = new Activity(2, 5);
+        arr[2] = new Activity(4, 7);
+        arr[3] = new Activity(3, 8);
+        arr[4] = new Activity(5, 9);
+        arr[5] = new Activity(8, 10);
+        arr[6] = new Activity(9, 11);
+        arr[7] = new Activity(11, 14);
+        arr[8] = new Activity(13, 16);
         long startTime = System.currentTimeMillis();
         InLich(arr, n);
         long endTime = System.currentTimeMillis();
