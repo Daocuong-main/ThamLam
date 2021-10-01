@@ -15,7 +15,7 @@ class Compare {
             @Override
             public int compare(Activity s1, Activity s2) {
                 return s1.finish - s2.finish;
-            }
+            } // Sap xep tang dan (Hoat dong xong truoc xep truoc)
         });
     }
 }
