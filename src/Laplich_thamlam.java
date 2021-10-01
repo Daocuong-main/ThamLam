@@ -10,7 +10,7 @@ class Activity {
 }
 
 class Compare {
-    static void compare(Activity arr[], int n) {
+    static void compare(Activity arr[]) {
         Arrays.sort(arr, new Comparator<Activity>() {
             @Override
             public int compare(Activity s1, Activity s2) {
@@ -23,7 +23,7 @@ class Compare {
 class Laplich_thamlam {
     static void InLich(Activity arr[], int n) {
         Compare obj = new Compare();
-        obj.compare(arr, n);
+        obj.compare(arr);
         System.out.println("Lich duoc chon :");
         int i = 0;
         System.out.print("(" + arr[i].start + ", " + arr[i].finish + ") ");
